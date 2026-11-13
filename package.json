@@ -1,0 +1,29 @@
+{
+	"name": "opentools",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"lint": "oxlint",
+		"preview": "bun run build && vite preview",
+		"deploy": "bun run build && wrangler deploy",
+		"cf-typegen": "wrangler types"
+	},
+	"dependencies": {
+		"react": "^19.3.1",
+		"react-dom": "^19.3.1"
+	},
+	"devDependencies": {
+		"@cloudflare/vite-plugin": "^1.69.1",
+		"@types/node": "^26.6.6",
+		"@types/react": "^19.3.0",
+		"@types/react-dom": "^19.3.0",
+		"@vitejs/plugin-react": "^6.1.2",
+		"oxlint": "^1.90.0",
+		"typescript": "~7.0.2",
+		"vite": "^8.3.6",
+		"wrangler": "^4.161.0"
+	}
+}
